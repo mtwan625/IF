@@ -4802,13 +4802,14 @@ MonoBehaviour:
   m_text: click to continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0fb31800d3f41f45a9f201c4167a347, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -6384300766357921284, guid: c0fb31800d3f41f45a9f201c4167a347,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285558896
+    rgba: 4288848546
   m_fontColor: {r: 0.63529414, g: 0.63529414, b: 0.63529414, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -8760,6 +8761,7 @@ GameObject:
   - component: {fileID: 1981020860}
   - component: {fileID: 1981020862}
   - component: {fileID: 1981020861}
+  - component: {fileID: 1981020863}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -8784,7 +8786,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981020861
 MonoBehaviour:
@@ -8822,6 +8824,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981020859}
   m_CullTransparentMesh: 0
+--- !u!95 &1981020863
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981020859}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2173b66c1f74ffe419ec8b93f8935c0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2124641528
 GameObject:
   m_ObjectHideFlags: 0
