@@ -8,6 +8,8 @@ public class ClickableText : MonoBehaviour
     StoryManager storyManager;
     TextManager textManager;
 
+    AudioSource sfx;
+
     TextMeshProUGUI text;
 
     int lastUpdateIndex = -1;
@@ -16,6 +18,8 @@ public class ClickableText : MonoBehaviour
     {
         storyManager = GameObject.Find("Game Manager").GetComponent<StoryManager>();
         textManager = GameObject.Find("Game Manager").GetComponent<TextManager>();
+
+        sfx = GameObject.Find("SFX").GetComponent<AudioSource>();
 
         text = GetComponent<TextMeshProUGUI>();
     }
@@ -66,6 +70,7 @@ public class ClickableText : MonoBehaviour
             TMP_LinkInfo info = text.textInfo.linkInfo[index];
             string input = info.GetLinkID(); // <link = input> input </link>
 
+            sfx.Play();
             storyManager.GetNextDialogue(input);
         }
     }

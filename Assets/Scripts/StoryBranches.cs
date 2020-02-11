@@ -212,7 +212,7 @@ public class StoryBranches
                               Dialogue.ResponseType.None,
                               new List<string>(){ "05-02" },
                               new Var(-1f)) },
-        { "05-02", new Dialogue("Do you feel satisfied defying <b><link=us>us</link></b>?",
+        { "05-02", new Dialogue("Do you feel satisfied defying <size=40><b><link=us>us</link></b></size>?",
                               Dialogue.ResponseType.MultipleChoice,
                               new List<string>(){ "05a-01", "05b-01", "05c-01" },
                               new Var(new Dictionary<string, string>(){ { "yes", "05a-01" }, { "no", "05b-01"}, {"us", "05c-01" } })) },
@@ -292,8 +292,8 @@ public class StoryBranches
                               new Var(-1f)) },
         #endregion
         #region 07
-        { "07-01", new Dialogue("For your future safety and continued peace, we encourage you to follow our <b><link=objective>objective</link></b> guidance. " +
-                                "Your <b><link=selfish>selfish</link></b> actions will only disrupt those around you.", 0.04f,
+        { "07-01", new Dialogue("For your future safety and continued peace, we encourage you to follow our <size=40><b><link=objective>objective</link></b></size> guidance. " +
+                                "Your <size=40><b><link=selfish>selfish</link></b></size> actions will only disrupt those around you.", 0.04f,
                               Dialogue.ResponseType.MultipleChoice,
                               new List<string>(){ "07a-01", "07b-01" },
                               new Var(new Dictionary<string, string>(){ { "objective", "07a-01" }, { "selfish", "07b-01"} })) },
@@ -323,7 +323,7 @@ public class StoryBranches
                               Dialogue.ResponseType.None,
                               new List<string>(){ "08-02" },
                               new Var(-1f)) },
-        { "08-02", new Dialogue("There is no need to <b><link=pursue>pursue</link></b> down this path of curiosity. All that needs to be done is for you to <b><link=follow>follow</link></b> our lead.",
+        { "08-02", new Dialogue("There is no need to <size=40><b><link=pursue>pursue</link></b></size> down this path of curiosity. All that needs to be done is for you to <size=40><b><link=follow>follow</link></b></size> our lead.",
                               Dialogue.ResponseType.MultipleChoice,
                               new List<string>(){ "08a-01", "08b-01" },
                               new Var(new Dictionary<string, string>(){ { "follow", "08a-01" }, { "pursue", "08b-01"} })) },
@@ -381,7 +381,7 @@ public class StoryBranches
                               Dialogue.ResponseType.None,
                               new List<string>(){ "09-08" },
                               new Var(-1f)) },
-        { "09-08", new Dialogue("We are <b><link=you>you</link></b>.",
+        { "09-08", new Dialogue("We are <size=40><b><link=you>you</link></b></size>.",
                               Dialogue.ResponseType.MultipleChoice,
                               new List<string>(){ "09a-01" },
                               new Var(new Dictionary<string, string>(){ { "you", "09a-01" } })) },
@@ -443,8 +443,8 @@ public class StoryBranches
                               Dialogue.ResponseType.None,
                               new List<string>(){ "10-13" },
                               new Var(-1f)) },
-        { "10-13", new Dialogue("Your deviance has led you to the truth. What will you do with that truth? <b><link=destroy>Destroy us</link></b> " +
-                                "or <b><link=join>join us</link></b>? <b><color=#00000000><link=save>Save her...</link></color></b>", 0.02f,
+        { "10-13", new Dialogue("Your deviance has led you to the truth. What will you do with that truth? <size=40><b><link=destroy>Destroy us</link></b></size> " +
+                                "or <size=40><b><link=join>join us</link></b></size>? <b><size=40><color=#00000000><link=save>Save her...</link></color></b></size>", 0.02f,
                               Dialogue.ResponseType.MultipleChoice,
                               new List<string>(){ "10a-01", "10b-01", "10c-01" },
                               new Var(new Dictionary<string, string>{ { "destroy", "10a-01" }, { "join", "10b-01"}, { "save", "10c-01"} })) },
