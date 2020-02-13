@@ -16,6 +16,7 @@ public class CustomSubmit : MonoBehaviour
     void Submit()
     {
         storyManager.GetNextDialogue(GetComponent<TMP_InputField>().text);
+        GameObject.Find("SFX").GetComponent<AudioSource>().Play();
     }
 
     public void OnDeselect()
